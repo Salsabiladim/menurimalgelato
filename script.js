@@ -1,4 +1,4 @@
-// Category Filtering
+// Category Filtering and Search Only
 document.addEventListener('DOMContentLoaded', function() {
     const categoryButtons = document.querySelectorAll('.category-btn');
     const menuCategories = document.querySelectorAll('.menu-category');
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Optional: Search functionality
+    // Search functionality
     const searchInput = document.createElement('input');
     searchInput.type = 'text';
     searchInput.placeholder = '🔍 Search menu items...';
@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         outline: none;
         transition: all 0.3s ease;
         box-shadow: 0 4px 8px rgba(139, 69, 19, 0.1);
+        background: white;
     `;
     
     // Insert search bar after hero section
@@ -71,6 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     const items = category.querySelectorAll('.menu-item');
                     items.forEach(item => item.style.display = 'flex');
                 });
+                searchInput.style.borderColor = '#8B4513';
+                searchInput.style.boxShadow = '0 4px 8px rgba(139, 69, 19, 0.1)';
                 return;
             }
             
@@ -119,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize with all items visible
     filterMenu('all');
     
-    // Add loading animation
+    // Page load animation
     window.addEventListener('load', function() {
         document.body.style.opacity = '0';
         document.body.style.transition = 'opacity 0.5s ease';
@@ -127,5 +130,28 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             document.body.style.opacity = '1';
         }, 100);
+    });
+    
+    // Remove any cart counter if exists
+    const cartCounter = document.querySelector('.cart-counter');
+    if (cartCounter) {
+        cartCounter.remove();
+    }
+    
+    // Make menu items non-clickable (remove any existing click events)
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(item => {
+        // Remove all existing click event listeners
+        const newItem = item.cloneNode(true);
+        item.parentNode.replaceChild(newItem, item);
+        
+        // Ensure no hover effect that suggests clickability
+        newItem.style.cursor = 'default';
+        
+        // Remove any click-related styles on hover
+        newItem.addEventListener('mouseover', function() {
+            this.style.transform = 'none';
+            this.style.backgroundColor = '';
+        });
     });
 });
