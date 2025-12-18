@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rimal Gelato Tétouan - Digital Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhl8tXlSFCkOIBZ382NQtm_u8RtPsHBXRQEg&s" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhl8tXlSFCkOIBZ382NQtm_u8RtPsHBXRQEg&s" 
+                     alt="Rimal Gelato Logo" 
+                     class="logo-image">
+                <p class="tagline">Sweet Moments & Coffee Bliss | Tétouan Branch</p>
+            </div>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Tétouan, Morocco</p>
+                <p><i class="fas fa-clock"></i> Open Daily: 8AM - 11PM</p>
+            </div>
+        </div>
+        
+        <nav class="category-nav">
+            <button class="category-btn active" data-category="all">All Items</button>
+            <button class="category-btn" data-category="crepes">Crêpes</button>
+            <button class="category-btn" data-category="waffles">Waffles</button>
+            <button class="category-btn" data-category="pancakes">Pancakes</button>
+            <button class="category-btn" data-category="coffee">Coffee</button>
+            <button class="category-btn" data-category="tea">Tea</button>
+            <button class="category-btn" data-category="pastry">Pastry</button>
+            <button class="category-btn" data-category="drinks">Cold Drinks</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Artisanal Treats & Premium Coffee</h2>
+                <p>Experience the perfect blend of traditional recipes and modern flavors in Tétouan</p>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-store"></i>
+                    <span>Rimal Gelato Tétouan</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="menu-grid">
+            <!-- Crêpes Sucrées -->
+            <section class="menu-category" data-category="crepes">
+                <div class="category-header">
+                    <i class="fas fa-pancakes"></i>
+                    <h2>Crêpes Sucrées</h2>
+                    <span class="price-badge">Sweet Crêpes</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe Nutella</h3>
+                            <p>Classic crêpe with rich Nutella spread</p>
+                        </div>
+                        <span class="item-price">25 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe Nutella Banana</h3>
+                            <p>Nutella with fresh banana slices</p>
+                        </div>
+                        <span class="item-price">35 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe 3 Chocolates</h3>
+                            <p>Dark, milk, and white chocolate</p>
+                        </div>
+                        <span class="item-price">30 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe Roll</h3>
+                            <p>Rolled crêpe with your choice of filling</p>
+                        </div>
+                        <span class="item-price">40 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe Tagliatelle</h3>
+                            <p>Crêpe strips with sweet toppings</p>
+                        </div>
+                        <span class="item-price">40 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe Brownies</h3>
+                            <p>Crêpe with brownie pieces and chocolate</p>
+                        </div>
+                        <span class="item-price">45 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe Pistachio</h3>
+                            <p>With pistachio cream and nuts</p>
+                        </div>
+                        <span class="item-price">55 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe Fruits Secs</h3>
+                            <p>With mixed dried fruits</p>
+                        </div>
+                        <span class="item-price">40 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe 4 Saisons</h3>
+                            <p>Seasonal fruits and toppings</p>
+                        </div>
+                        <span class="item-price">50 DH</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Crêpes Salées -->
+            <section class="menu-category" data-category="crepes">
+                <div class="category-header">
+                    <i class="fas fa-cheese"></i>
+                    <h2>Crêpes Salées</h2>
+                    <span class="price-badge">Savory Crêpes</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe 4 Fromages</h3>
+                            <p>Four cheese blend</p>
+                        </div>
+                        <span class="item-price">30 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe Charcuterie</h3>
+                            <p>Assorted cured meats</p>
+                        </div>
+                        <span class="item-price">40 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crêpe Pastilla Poulet</h3>
+                            <p>Traditional chicken pastilla style</p>
+                        </div>
+                        <span class="item-price">55 DH</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bubble Waffles -->
+            <section class="menu-category" data-category="waffles">
+                <div class="category-header">
+                    <i class="fas fa-waffle"></i>
+                    <h2>Bubble Waffles</h2>
+                    <span class="price-badge">Hong Kong Style</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bubble Waffles Nutella</h3>
+                            <p>Crispy bubble waffle with Nutella</p>
+                        </div>
+                        <span class="item-price">30 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bubble Waffles Nutella Banana</h3>
+                            <p>Nutella with fresh bananas</p>
+                        </div>
+                        <span class="item-price">35 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bubble Waffles 3 Chocolates</h3>
+                            <p>Triple chocolate delight</p>
+                        </div>
+                        <span class="item-price">35 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bubble Waffles Brownies</h3>
+                            <p>With brownie chunks</p>
+                        </div>
+                        <span class="item-price">45 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bubble Waffles Pistachio</h3>
+                            <p>Pistachio cream and nuts</p>
+                        </div>
+                        <span class="item-price">55 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bubble Waffles Fruits Secs</h3>
+                            <p>With dried fruits</p>
+                        </div>
+                        <span class="item-price">40 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bubble Waffles 4 Saisons</h3>
+                            <p>Seasonal fruit toppings</p>
+                        </div>
+                        <span class="item-price">50 DH</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gaufres -->
+            <section class="menu-category" data-category="waffles">
+                <div class="category-header">
+                    <i class="fas fa-star"></i>
+                    <h2>Gaufres</h2>
+                    <span class="price-badge">Belgian Waffles</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Gaufre Nutella</h3>
+                            <p>Belgian waffle with Nutella</p>
+                        </div>
+                        <span class="item-price">25 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Gaufre Nutella Banana</h3>
+                            <p>With fresh bananas</p>
+                        </div>
+                        <span class="item-price">32 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Gaufre 3 Chocolates</h3>
+                            <p>Three chocolate types</p>
+                        </div>
+                        <span class="item-price">30 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Gaufre Brownies</h3>
+                            <p>Brownie pieces topping</p>
+                        </div>
+                        <span class="item-price">45 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Gaufre Pistachio</h3>
+                            <p>Pistachio cream</p>
+                        </div>
+                        <span class="item-price">55 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Gaufre Fruits Secs</h3>
+                            <p>Dried fruit mix</p>
+                        </div>
+                        <span class="item-price">40 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Gaufre 4 Saisons</h3>
+                            <p>Seasonal fruits</p>
+                        </div>
+                        <span class="item-price">50 DH</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pancakes -->
+            <section class="menu-category" data-category="pancakes">
+                <div class="category-header">
+                    <i class="fas fa-hotcake"></i>
+                    <h2>Pancakes</h2>
+                    <span class="price-badge">Fluffy Stack</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Pancakes Nutella</h3>
+                            <p>Stack with Nutella drizzle</p>
+                        </div>
+                        <span class="item-price">30 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Pancakes Nutella Banana</h3>
+                            <p>With banana slices</p>
+                        </div>
+                        <span class="item-price">35 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Pancakes 3 Chocolates</h3>
+                            <p>Triple chocolate sauce</p>
+                        </div>
+                        <span class="item-price">35 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Pancakes Brownies</h3>
+                            <p>With brownie bits</p>
+                        </div>
+                        <span class="item-price">45 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Pancakes Pistachio</h3>
+                            <p>Pistachio topping</p>
+                        </div>
+                        <span class="item-price">55 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Pancakes Fruits Secs</h3>
+                            <p>Dried fruits garnish</p>
+                        </div>
+                        <span class="item-price">40 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Pancakes 4 Saisons</h3>
+                            <p>Seasonal fruit stack</p>
+                        </div>
+                        <span class="item-price">50 DH</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hot Drinks - Coffee -->
+            <section class="menu-category" data-category="coffee">
+                <div class="category-header">
+                    <i class="fas fa-coffee"></i>
+                    <h2>Hot Drinks</h2>
+                    <span class="price-badge">Coffee Selection</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Espresso</h3>
+                            <p>Strong Italian espresso</p>
+                        </div>
+                        <span class="item-price">16 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Espresso Con Panna</h3>
+                            <p>Espresso with whipped cream</p>
+                        </div>
+                        <span class="item-price">18 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Espresso Macchiato</h3>
+                            <p>Espresso "stained" with milk</p>
+                        </div>
+                        <span class="item-price">18 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Flavored Espresso</h3>
+                            <p>Caramel, Noisette, Anise, Vanilla, Chocolate</p>
+                        </div>
+                        <span class="item-price">19 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Ristretto</h3>
+                            <p>Short, concentrated espresso</p>
+                        </div>
+                        <span class="item-price">16 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Double Espresso</h3>
+                            <p>Double shot of espresso</p>
+                        </div>
+                        <span class="item-price">22 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Flavored Double Espresso*</h3>
+                            <p>Double with flavor of choice</p>
+                        </div>
+                        <span class="item-price">22 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Flat White</h3>
+                            <p>Ristretto with microfoam</p>
+                        </div>
+                        <span class="item-price">25 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Cappuccino</h3>
+                            <p>Classic Italian cappuccino</p>
+                        </div>
+                        <span class="item-price">22 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Flavored Cappuccino*</h3>
+                            <p>With flavored syrup</p>
+                        </div>
+                        <span class="item-price">28 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Latte Macchiato*</h3>
+                            <p>Layered milk and espresso</p>
+                        </div>
+                        <span class="item-price">28 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Moccaccino Dark or White</h3>
+                            <p>Mocha with dark or white chocolate</p>
+                        </div>
+                        <span class="item-price">30 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Affogato</h3>
+                            <p>Espresso over gelato</p>
+                        </div>
+                        <span class="item-price">32 DH</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tea Moment -->
+            <section class="menu-category" data-category="tea">
+                <div class="category-header">
+                    <i class="fas fa-mug-hot"></i>
+                    <h2>Tea Moment</h2>
+                    <span class="price-badge">Infusions</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Moroccan Tea & Infusion</h3>
+                            <p>Traditional Moroccan mint tea</p>
+                        </div>
+                        <span class="item-price">16 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Ice Tea</h3>
+                            <p>Refreshing iced tea</p>
+                        </div>
+                        <span class="item-price">28 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bubble Tea Ice</h3>
+                            <p>Iced bubble tea with tapioca</p>
+                        </div>
+                        <span class="item-price">38 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bubble Tea Smooth</h3>
+                            <p>Smooth blended bubble tea</p>
+                        </div>
+                        <span class="item-price">42 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bubble Tea Shake</h3>
+                            <p>Shaken bubble tea creation</p>
+                        </div>
+                        <span class="item-price">55 DH</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chocolate Moment -->
+            <section class="menu-category" data-category="drinks">
+                <div class="category-header">
+                    <i class="fas fa-mug-marshmallows"></i>
+                    <h2>Chocolate Moment</h2>
+                    <span class="price-badge">Hot Chocolate</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Ciocoliata Calda</h3>
+                            <p>Classic hot chocolate</p>
+                        </div>
+                        <span class="item-price">24 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Ciocoliata A L'ancienne</h3>
+                            <p>Old-fashioned hot chocolate</p>
+                        </div>
+                        <span class="item-price">29 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Ciocoliata A L'ancienne Flavored</h3>
+                            <p>With flavor of choice</p>
+                        </div>
+                        <span class="item-price">33 DH</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pastry -->
+            <section class="menu-category" data-category="pastry">
+                <div class="category-header">
+                    <i class="fas fa-cookie-bite"></i>
+                    <h2>Pastry</h2>
+                    <span class="price-badge">Fresh Baked</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Chocolat Fondue</h3>
+                            <p>Chocolate fondue for sharing</p>
+                        </div>
+                        <span class="item-price">18 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Cookies</h3>
+                            <p>Fresh baked cookies</p>
+                        </div>
+                        <span class="item-price">15 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Brownies</h3>
+                            <p>Rich chocolate brownie</p>
+                        </div>
+                        <span class="item-price">18 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Gateaux</h3>
+                            <p>Selection of cakes</p>
+                        </div>
+                        <span class="item-price">30 DH</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Iced Coffee -->
+            <section class="menu-category" data-category="coffee">
+                <div class="category-header">
+                    <i class="fas fa-glass-whiskey"></i>
+                    <h2>Iced Coffee</h2>
+                    <span class="price-badge">Chilled</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Iced Americano</h3>
+                            <p>Chilled espresso with water</p>
+                        </div>
+                        <span class="item-price">22 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Iced Coffee Latte</h3>
+                            <p>Iced latte</p>
+                        </div>
+                        <span class="item-price">22 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Iced Cappuccino</h3>
+                            <p>Cold cappuccino</p>
+                        </div>
+                        <span class="item-price">22 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Iced Latte Macchiato*</h3>
+                            <p>Layered iced latte</p>
+                        </div>
+                        <span class="item-price">29 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Iced Mochaccino</h3>
+                            <p>Iced mocha</p>
+                        </div>
+                        <span class="item-price">31 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Spanish Latte</h3>
+                            <p>Sweetened condensed milk latte</p>
+                        </div>
+                        <span class="item-price">40 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Frappuccino*</h3>
+                            <p>Vanilla, Hazelnut, Anise, Cinnamon, Caramel</p>
+                        </div>
+                        <span class="item-price">42 DH</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Smoothies -->
+            <section class="menu-category" data-category="drinks">
+                <div class="category-header">
+                    <i class="fas fa-blender"></i>
+                    <h2>Smoothies</h2>
+                    <span class="price-badge">Fresh Blended</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Florida</h3>
+                            <p>Strawberry, banana, yogurt</p>
+                        </div>
+                        <span class="item-price">28 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Exotic</h3>
+                            <p>Pineapple, mango, kiwi</p>
+                        </div>
+                        <span class="item-price">32 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Berrylan</h3>
+                            <p>Red fruit, yogurt, banana</p>
+                        </div>
+                        <span class="item-price">34 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Healthy</h3>
+                            <p>Kiwi, ginger, apple, yogurt</p>
+                        </div>
+                        <span class="item-price">40 DH</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ice Cold Drinks -->
+            <section class="menu-category" data-category="drinks">
+                <div class="category-header">
+                    <i class="fas fa-cocktail"></i>
+                    <h2>Ice Cold Drinks</h2>
+                    <span class="price-badge">Refreshing</span>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Virgin Mojito</h3>
+                            <p>Fresh mint and lime</p>
+                        </div>
+                        <span class="item-price">28 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Flavored Mojito</h3>
+                            <p>With fruit flavors</p>
+                        </div>
+                        <span class="item-price">32 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Pina Colada</h3>
+                            <p>Pineapple, coconut, lemon</p>
+                        </div>
+                        <span class="item-price">35 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Borasin</h3>
+                            <p>Grape juice, anise, cinnamon, lemon, red fruit, mint</p>
+                        </div>
+                        <span class="item-price">38 DH</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="note-section">
+            <div class="note">
+                <i class="fas fa-info-circle"></i>
+                <p>* Flavors available: Caramel, Noisette, Anise, Vanilla, Chocolate</p>
+            </div>
+            <div class="note">
+                <i class="fas fa-leaf"></i>
+                <p>All our products are made fresh daily with quality ingredients</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rimal Gelato Tétouan</h3>
+                <p>Creating sweet moments in Tétouan</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/rimalgelato" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> +212 5 XX XXX XXX</p>
+                <p><i class="fas fa-envelope"></i> tetouan@rimalgelato.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Sunday: 8:00 AM - 11:00 PM</p>
+                <p>Holidays: 10:00 AM - 10:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rimal Gelato Tétouan. All rights reserved. | Designed with <i class="fas fa-heart"></i> for coffee lovers</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
